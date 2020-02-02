@@ -164,9 +164,11 @@
 				TargetAttributes = {
 					4F0C3D361AFCE09300030C8F = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 28JQHFBXH6;
 					};
 					4F0C3D4B1AFCE09300030C8F = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 28JQHFBXH6;
 						TestTargetID = 4F0C3D361AFCE09300030C8F;
 					};
 				};
@@ -176,6 +178,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -344,10 +347,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 28JQHFBXH6;
 				INFOPLIST_FILE = "App Launching like Twitter/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "one.proactive.App-Launching-like-Twitter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -355,10 +361,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 28JQHFBXH6;
 				INFOPLIST_FILE = "App Launching like Twitter/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "one.proactive.App-Launching-like-Twitter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -366,6 +375,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 28JQHFBXH6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -385,6 +395,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 28JQHFBXH6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -415,6 +426,7 @@
 				4F0C3D581AFCE09300030C8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4F0C3D591AFCE09300030C8F /* Build configuration list for PBXNativeTarget "App Launching like TwitterTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +435,7 @@
 				4F0C3D5B1AFCE09300030C8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
