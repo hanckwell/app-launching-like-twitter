@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let maskBgView = UIView(frame: navigationController.view.frame)
         maskBgView.backgroundColor = UIColor.white
         navigationController.view.addSubview(maskBgView)
-        navigationController.view.bringSubview(toFront: maskBgView)
+        navigationController.view.bringSubviewToFront(maskBgView)
         
         // logo mask animation
         let transformAnimation = CAKeyframeAnimation(keyPath: "bounds")
@@ -49,9 +49,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let finalBounds = NSValue.init(cgRect:CGRect(x: 0, y: 0, width: 2000, height: 2000))
         transformAnimation.values = [initalBounds, secondBounds, finalBounds]
         transformAnimation.keyTimes = [0, 0.5, 1]
-        transformAnimation.timingFunctions = [CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut), CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)]
+        transformAnimation.timingFunctions = [CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut), CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)]
         transformAnimation.isRemovedOnCompletion = false
-        transformAnimation.fillMode = kCAFillModeForwards
+        transformAnimation.fillMode = CAMediaTimingFillMode.forwards
         navigationController.view.layer.mask?.add(transformAnimation, forKey: "maskAnimation")
         
         // logo mask background view animation
